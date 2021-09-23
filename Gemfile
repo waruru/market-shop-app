@@ -56,7 +56,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # bulma
-gem "bulma-rails"
+gem 'bulma-rails'
+
+# font-awesome
+gem 'font-awesome-rails'
 
 # use login
 gem 'devise'

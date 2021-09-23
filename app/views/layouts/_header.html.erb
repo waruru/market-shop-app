@@ -1,8 +1,8 @@
 <header class="navbar has-background-primary">
   <div class="navbar-brand">
-    <span class="navbar-item">
-      <span class="fa fa-language"></span>ショップ
-    </span>
+    <div class="navbar-item">
+      <%= link_to "ショッピング", root_path %>
+    </div>
   </div>
 
   <div class="navbar-end">
@@ -18,9 +18,13 @@
     </div>
   </div>
   <div class="navbar-item">
-    <%= link_to 'ログイン', new_user_session_path %>
+    <%= link_to new_user_session_path do %>
+      <i class="fa fa-user"></i>ログイン
+    <% end %>
   </div>
   <div class="navbar-item">
-    <%= link_to "登録", new_user_registration_path %>
+    <%= link_to new_user_registration_path do %>
+      <i class="fa fa-user-plus"></i>登録
+    <% end %>
   </div>
 </header>
